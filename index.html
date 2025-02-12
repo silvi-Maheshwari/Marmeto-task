@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logos">
+            
+                <img src="https://s3-alpha-sig.figma.com/img/2727/769b/a74736d502746301ed573ed8940fc322?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=WoJ-L8z8Vqc1wv3QnE-Zp9RACKOc2UCCUn0PXCVYioMw-WfWAlmIGwFGEpeIhSxny5C3zwoxXruIpIDSgD7hO6FESEhaMWe4RFp9-kgQ9GsEzyRcbEykRKZoe9rMNXbcdcIQ~Pj1NibAOQMGR1kjR3iWjT6syboozPaj4lpaIuNJfFmI1WUvmiGuMU~LzvG0KM7eWMcGv9Ra8i8RAeRrATP4GZj-yKREeYGgzOZfv-fVqZv8TZT85IndLF1QLuwMc2XS7a8a5coH6fqy~C0z1EbVbF7t7fJ0GKL0sMPozRKnHEmUhrQlQRulCwJqj0m7wfua3PnQJt6nzePiHrOcNQ__" width="40px" height="32px"/>
+                <div>Marmeto</div>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+               
+            </ul>
+            <!-- Search, Wishlist, and Cart Icons -->
+            <div class="icons">
+                <i class="fa fa-search"></i>  <!-- Search Icon -->
+                <i class="fa fa-heart"></i>   <!-- Wishlist Icon -->
+                <i class="fa fa-shopping-cart"></i>  <!-- Cart Icon -->
+            </div>
+        </nav>
+    </header>
+    
+    <section class="cart-banner">
+        
+        <h2>Cart</h2>
+        <p>Home > Cart</p>
+    </section>
+    
+    <main>
+        <section class="cart-container ">
+            <div class="cart-items table-container">
+                <table>
+                    <thead>
+                        <tr class="jj"> 
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items" >
+                        <!-- Items will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-summary">
+                <h3>Cart Totals</h3>
+                <p>Subtotal: <span id="subtotal">Rs. 0.00</span></p>
+                <p>Total: <span id="total" style="color:  #B88E2F;
+;">Rs. 0.00</span></p>
+                <button id="checkout-btn">Check Out</button>
+            </div>
+        </section>
+
+        <div class="features-container">
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/3891/3891808.png" alt="Warranty Icon">
+                <div>
+                    <h4>High Quality</h4>
+                    <p>crafted from top materials</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://www.svgrepo.com/show/375235/warranty-term.svg" alt="Warranty Icon">
+                <div>
+                    <h4>Warranty Protection</h4>
+                    <p>Over 2 years</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://static.thenounproject.com/png/2526085-200.png" alt="Shipping Icon">
+                <div>
+                    <h4>Free Shipping</h4>
+                    <p>Order over 150$</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://cdn-icons-png.flaticon.com/512/4526/4526832.png" alt="Support Icon">
+                <div>
+                    <h4>24 / 7 Support</h4>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+</html>
